@@ -23,6 +23,19 @@ cabeza.direction = "left"
 
 #funciones
 
+def arriba():
+    cabeza.direction = "up"
+
+def arriba():
+    cabeza.direction = "down"    
+
+def arriba():
+    cabeza.direction = "left"
+
+def arriba():
+    cabeza.direction = "right"
+
+
 def mov():
     if cabeza.direction == "up":
         y = cabeza.ycor()
@@ -36,9 +49,13 @@ def mov():
         x = cabeza.xcor()
         cabeza.setx(x - 20)        
 
-    if cabeza.direction == "rigth":
+    if cabeza.direction == "right":
         x = cabeza.xcor()
         cabeza.setx(x + 20)
+
+#teclado
+wn.listen()
+wn.onkeypress(arriba, "Up")
 
 
 while True:
