@@ -1,5 +1,6 @@
 import turtle
 import time
+import random
 
 posponer= 0.1
 
@@ -23,11 +24,13 @@ cabeza.direction = "stop"
 #comida
 comida = turtle.Turtle()
 comida.speed(0)
-comida.shape("square")
-comida.color("white")
+comida.shape("circle")
+comida.color("red")
 comida.penup()
-comida.goto(0,0)
+comida.goto(0,100)
 
+#cuerpo serpiente
+segmentos = []
 
 
 
@@ -74,6 +77,18 @@ wn.onkeypress(derecha, "Right")
 while True:
     wn.update()
 
+    if cabeza.distance(comida) < 20:
+        x = random.randint(-280, 280)
+        y = random.randint(-280, 280)
+        comida.goto(x,y)
+
+        nuevo_segmento = turtle.Turtle()
+        nuevo_segmento.speed(0)
+        nuevo_segmento.shape("square")
+        nuevo_segmento.color("grey")
+        nuevo_segmento.penup()
+        
+      
     mov()
     time.sleep(posponer)
    
