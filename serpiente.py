@@ -87,6 +87,19 @@ while True:
         nuevo_segmento.shape("square")
         nuevo_segmento.color("grey")
         nuevo_segmento.penup()
+        segmentos.append(nuevo_segmento)
+
+    #mover el cuerpo de la serpiente
+    totalSeg = len(segmentos)
+    for index in range(totalSeg -1, 0, -1):
+        x = segmentos[index -1].xcor() 
+        y = segmentos[index -1].ycor()
+        segmentos[index].goto(x,y)
+
+    if totalSeg > 0:
+        x = cabeza.xcor()
+        y = cabeza.ycor()
+        segmentos[0].goto(x,y)      
         
       
     mov()
