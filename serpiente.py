@@ -24,9 +24,9 @@ cabeza.direction = "stop"
 comida = turtle.Turtle()
 comida.speed(0)
 comida.shape("square")
-comida.color("red")
+comida.color("white")
 comida.penup()
-comida.goto(0,100)
+comida.goto(0,0)
 
 
 
