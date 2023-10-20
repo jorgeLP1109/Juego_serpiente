@@ -26,13 +26,13 @@ cabeza.direction = "stop"
 def arriba():
     cabeza.direction = "up"
 
-def arriba():
+def abajo():
     cabeza.direction = "down"    
 
-def arriba():
+def izquierda():
     cabeza.direction = "left"
 
-def arriba():
+def derecha():
     cabeza.direction = "right"
 
 
