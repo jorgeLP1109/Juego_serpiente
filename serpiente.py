@@ -19,7 +19,7 @@ cabeza.shape("square")
 cabeza.color("white")
 cabeza.penup()
 cabeza.goto(0,0)
-cabeza.direction = "left"
+cabeza.direction = "stop"
 
 #funciones
 
@@ -56,6 +56,9 @@ def mov():
 #teclado
 wn.listen()
 wn.onkeypress(arriba, "Up")
+wn.onkeypress(abajo, "Down")
+wn.onkeypress(izquierda, "Left")
+wn.onkeypress(derecha, "Right")
 
 
 while True:
