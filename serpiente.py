@@ -20,6 +20,16 @@ cabeza.color("white")
 cabeza.penup()
 cabeza.goto(0,0)
 cabeza.direction = "stop"
+#comida
+comida = turtle.Turtle()
+comida.speed(0)
+comida.shape("square")
+comida.color("red")
+comida.penup()
+comida.goto(0,100)
+
+
+
 
 #funciones
 
